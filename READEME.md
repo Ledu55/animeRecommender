@@ -51,7 +51,6 @@ shows a list with the anime series with best scores on the model as
 a suggestion. All project was containerized with Docker and uploaded
 in Heroku.
 
-
 # 4.0 Next Steps
 
 4.1 Develop an app that intakes labels from different users to train 
