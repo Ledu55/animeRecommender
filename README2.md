@@ -1,2 +1,0 @@
-# animeRecommender
-Anime Recommender Application
