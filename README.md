@@ -1,6 +1,11 @@
 # Anime Recommender
 ### Suggest animes based on your historic 
 
+---
+
+Access the application here:
+https://safe-waters-36970.herokuapp.com
+
 # 1.0 Context
 
 ## 1.1 What are animes?
@@ -59,3 +64,13 @@ the model and deploy a different result for each one.
 4.2 Build a endpoint and improve de app list with better design.
 
 4.3 Build a model retraining pipeline.
+
+# 5.0 References 
+
+### Context
+- https://en.wikipedia.org/wiki/Anime
+
+### Technical Content
+- https://myanimelist.net/apiconfig/references/api/v2
+- https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_CommonTasks.Connect.html
+- https://devcenter.heroku.com/articles/getting-started-with-python
