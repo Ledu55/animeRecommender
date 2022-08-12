@@ -33,10 +33,10 @@ def start_backend(curr, df):
     
 
 # Database Credentials
-host_name = 'personalproject.crpcbnfr4nbk.us-east-1.rds.amazonaws.com'
-username = 'admin'
-password = 'ad5c7455'
-dbname = 'personal_projects'
+host_name = '****'
+username = '****'
+password = '****'
+dbname = '****'
 port = 3306
 
 conn = connect_to_db(host_name, username, password, dbname, port)
