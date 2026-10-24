@@ -1,3 +1,13 @@
 .idea
+.vscode
 .ipynb_checkpoints
 __pycache__
+*.egg-info
+.venv
+.env
+.pytest_cache
+.ruff_cache
+site/
+models/*.joblib
+*.db
+data/candidates.json

@@ -1,0 +1,47 @@
+name: Weekly recommendations
+
+# Retrains on your MAL list, refreshes the picks and publishes them to GitHub Pages.
+# Needs repository secrets MAL_CLIENT_ID and MAL_USERNAME, and Pages set to "GitHub Actions".
+on:
+  schedule:
+    - cron: "0 9 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      MAL_CLIENT_ID: ${{ secrets.MAL_CLIENT_ID }}
+      MAL_USERNAME: ${{ secrets.MAL_USERNAME }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install .
+      - run: animerec train
+      - run: animerec update
+      - run: animerec build-site
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

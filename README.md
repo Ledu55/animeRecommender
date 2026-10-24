@@ -1,76 +1,93 @@
 # Anime Recommender
-### Suggest animes based on your historic 
 
----
+Suggests anime based on your own [MyAnimeList](https://myanimelist.net) history.
 
-Access the application here:
-https://safe-waters-36970.herokuapp.com
+A model learns your taste from the scores on your MAL list, then ranks the most
+popular titles on MAL that you haven't watched yet. The picks are published as a
+small web page.
 
-# 1.0 Context
+## How it works
 
-## 1.1 What are animes?
-Anime (Japanese: アニメ) is a Japanese term for animation. 
-Outside of Japan and in English, anime refers specifically 
-to animation produced in Japan.However, in Japan and in Japanese,
-anime (a term derived from a shortening of the English word animation) describes all animated works, regardless 
-of style or origin. Animation produced outside of Japan with 
-similar style to Japanese animation is commonly referred to as 
-anime-influenced animation.
+1. **Labels** come from two places:
+   - **Your MAL list.** A score of `LIKE_THRESHOLD` (default 7) or higher means
+     *liked*. A lower score, or a dropped title, means *disliked*. Unscored
+     titles are ignored.
+   - **The `/rate` page.** It shows anime you haven't watched and lets you answer
+     👍 or 👎. Once a model exists, it asks about the titles the model is least
+     sure about (active learning). Your answers are saved to `data/ratings.json`
+     and override list scores. This is useful when your list has few low scores.
+2. **Features**: TF-IDF of the title and synopsis, genres, studios, media type,
+   plus MAL mean score, episode count, start year and popularity. They are
+   scaled with `MaxAbsScaler`.
+3. **Model**: a soft-voting ensemble of Logistic Regression (30%) and LightGBM
+   (70%). Preprocessing and model live in a single scikit-learn `Pipeline`.
+   Training logs the cross-validated average precision.
+4. **Recommendations**: the top `NUM_CANDIDATES` titles of the MAL ranking are
+   scored. Everything already on your list is skipped, except plan-to-watch. The
+   best `TOP_N` are written to `data/recommendations.json`.
 
-# 2.0 The Challenge
-Find new animes or other content to watch in next may be a problem
-sometimes. Even if you look at the popular series and brand-new ones
-it's hard to find something that fits exactly your taste, this project
-has as main goal to suggest a list of series to watch based on your 
-watch history.
+## Running locally
 
-# 3.0 The Solution
-In this project i managed to address the challenge by developing a 
-ensemble of classification model deployed on a webpage. The ensemble
-has an average precision that ranges from 70.88% to 74.88% to suggest
-a series that fit's your taste.
+Requires Python 3.11+.
 
-## 3.1 Data Source
-All data used in this project was extracted by MyAnimeList API.
-To know more about this API consult: https://myanimelist.net/apiconfig/references/api/v2
+```bash
+python -m venv .venv
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
+pip install -e ".[dev]"
 
-## 3.2 Data Storage
-After extraction the data is storage into a MySQL Database on AWS RDS
+cp .env.example .env             # then fill in MAL_CLIENT_ID and MAL_USERNAME
+```
 
-## 3.3 Labeling
-The labels for the anime series was made using Google Sheets to 
-visualize the tittle, mean score, number os episodes and picture and
-based on that labeling with 1 "I would like" or 0 "I wouldn't like".
-Since this method is very tough to do, I used Active Learning as a 
-strategy to improve the model results with fewer labels.
+Create the client ID at <https://myanimelist.net/apiconfig>. Your anime list must
+be public.
 
-## 3.4 Modeling
-- TFDFVectorized was applied on text features;
-- To scale numeric features was chosed MaxAbsScaler;
-- Was used a LightGBM and Logistic Regression Ensemble with a 3/7 
-balance.
+```bash
+animerec serve        # http://localhost:5000; rate anime at /rate, then click "Retrain"
+animerec train        # same as the button: fit the model -> models/model.joblib
+animerec update       # score the MAL ranking           -> data/recommendations.json
+animerec build-site   # static page                     -> site/index.html
+```
 
-## 3.5 App list
-This project was finished building a web application with Flask to 
-shows a list with the anime series with best scores on the model as 
-a suggestion. All project was containerized with Docker and uploaded
-in Heroku.
+Commit `data/ratings.json` so that the scheduled GitHub Actions run trains with
+your ratings too.
 
-# 4.0 Next Steps
+## Deploying
 
-4.1 Develop an app that intakes labels from different users to train 
-the model and deploy a different result for each one.
+**GitHub Pages (no server).** The workflow
+[`.github/workflows/pages.yml`](.github/workflows/pages.yml) retrains the model,
+refreshes the picks and publishes the static page every Monday. To set it up:
 
-4.2 Build a endpoint and improve de app list with better design.
+1. Add the repository secrets `MAL_CLIENT_ID` and `MAL_USERNAME`.
+2. Under *Settings → Pages*, set the source to *GitHub Actions*.
+3. Run the workflow once by hand from the *Actions* tab.
 
-4.3 Build a model retraining pipeline.
+**Docker** (Render, Fly.io, Railway, ...). Run `animerec update` first, so that
+`data/recommendations.json` is baked into the image:
 
-# 5.0 References 
+```bash
+docker build -t animerec .
+docker run -p 8000:8000 animerec
+```
 
-### Context
-- https://en.wikipedia.org/wiki/Anime
+## Development
 
-### Technical Content
-- https://myanimelist.net/apiconfig/references/api/v2
-- https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_CommonTasks.Connect.html
-- https://devcenter.heroku.com/articles/getting-started-with-python
+```bash
+pytest
+ruff check . && ruff format .
+nbstripout --install   # strip notebook outputs on commit
+```
+
+The [`notebooks/`](notebooks) folder holds the original 2022 exploration: the
+MySQL ETL, model comparison and active learning. They are kept for reference and
+are not used by the package.
+
+## Next steps
+
+- Multi-user mode: train one model per MAL username on demand.
+- Active learning again: surface the titles the model is least sure about so you
+  can rate them.
+
+## References
+
+- MyAnimeList API v2: <https://myanimelist.net/apiconfig/references/api/v2>
+- What is anime: <https://en.wikipedia.org/wiki/Anime>
