@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}Rate anime &middot; Anime Recommender{% endblock %}
+
+{% block header %}
+<p class="meta">
+  Would you like these? {{ rated }} rated so far.
+  {% if has_model %}Showing the titles the model is least sure about.{% else %}Showing popular titles.{% endif %}
+</p>
+{% endblock %}
+
+{% block main %}
+{% if message %}<p class="notice">{{ message }}</p>{% endif %}
+
+<form method="post" action="/train" style="margin: 0 0 16px">
+  <button class="primary" type="submit">Retrain and refresh recommendations</button>
+  <span class="meta">takes a few seconds</span>
+</form>
+
+<div class="grid">
+  {% for anime in queue %}
+  <div class="card" id="anime-{{ anime.anime_id }}">
+    <a href="https://myanimelist.net/anime/{{ anime.anime_id }}" target="_blank" rel="noopener">
+      <img src="{{ anime.picture }}" alt="" loading="lazy">
+    </a>
+    <div class="body">
+      <p class="title">{{ anime.title }}</p>
+      <div class="stats">
+        <span>{% if anime.mean_score == anime.mean_score %}&#9733; {{ anime.mean_score }}{% endif %}</span>
+        <span>{{ anime.media_type | upper }}</span>
+      </div>
+      <div class="chips">
+        {% for genre in anime.genres.split("|")[:3] if genre %}<span class="chip">{{ genre }}</span>{% endfor %}
+      </div>
+      <form class="actions" method="post" action="/rate">
+        <input type="hidden" name="anime_id" value="{{ anime.anime_id }}">
+        <button name="choice" value="like" title="I would like it">&#128077;</button>
+        <button name="choice" value="dislike" title="Not for me">&#128078;</button>
+        <button name="choice" value="skip" title="Skip">Skip</button>
+      </form>
+    </div>
+  </div>
+  {% else %}
+  <p class="empty">Nothing left to rate.</p>
+  {% endfor %}
+</div>
+
+<script>
+  // Rate without reloading the page; without JS the forms still work
+  document.querySelectorAll(".actions").forEach((form) => {
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const body = new FormData(form);
+      body.set("choice", event.submitter.value);
+      const response = await fetch(form.action, { method: "POST", body, headers: { Accept: "application/json" } });
+      if (response.ok) form.closest(".card").classList.add("rated");
+    });
+  });
+</script>
+{% endblock %}
