@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block header %}
+{% if generated_at %}
+<p class="meta">Picks for <strong>{{ username }}</strong> &middot; updated {{ generated_at[:10] }}</p>
+{% endif %}
+{% endblock %}
+
+{% block main %}
+{% if items %}
+<div class="grid">
+  {% for anime in items %}
+  <a class="card" href="{{ anime.url }}" target="_blank" rel="noopener">
+    <img src="{{ anime.picture }}" alt="" loading="lazy">
+    <div class="body">
+      <p class="title">{{ anime.title }}</p>
+      <div class="stats">
+        <span class="match">{{ (anime.score * 100) | round | int }}% match</span>
+        <span>
+          {% if anime.mean_score %}&#9733; {{ anime.mean_score }}{% endif %}
+          {% if anime.num_episodes %}&middot; {{ anime.num_episodes }} ep{% endif %}
+        </span>
+      </div>
+      <div class="chips">
+        {% for genre in anime.genres[:3] %}<span class="chip">{{ genre }}</span>{% endfor %}
+      </div>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+{% elif interactive %}
+<p class="empty">No recommendations yet. <a href="/rate">Rate some anime</a> to train the model.</p>
+{% else %}
+<p class="empty">No recommendations yet.</p>
+{% endif %}
+{% endblock %}

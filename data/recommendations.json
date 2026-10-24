@@ -1,0 +1,842 @@
+{
+  "generated_at": "2026-10-24T16:39:48+00:00",
+  "username": "emp55",
+  "items": [
+    {
+      "anime_id": 24701,
+      "title": "Mushishi Zoku Shou 2nd Season",
+      "genres": [
+        "Adult Cast",
+        "Adventure",
+        "Historical",
+        "Iyashikei",
+        "Mystery",
+        "Seinen",
+        "Slice of Life",
+        "Supernatural"
+      ],
+      "num_episodes": 10,
+      "mean_score": 8.72,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/9/68095.jpg",
+      "score": 0.9971,
+      "url": "https://myanimelist.net/anime/24701"
+    },
+    {
+      "anime_id": 61469,
+      "title": "Steel Ball Run: JoJo no Kimyou na Bouken",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Historical",
+        "Mystery",
+        "Racing",
+        "Seinen",
+        "Shounen",
+        "Supernatural"
+      ],
+      "num_episodes": null,
+      "mean_score": 9.04,
+      "media_type": "ona",
+      "picture": "https://cdn.myanimelist.net/images/anime/1065/158884.jpg",
+      "score": 0.9971,
+      "url": "https://myanimelist.net/anime/61469"
+    },
+    {
+      "anime_id": 21939,
+      "title": "Mushishi Zoku Shou",
+      "genres": [
+        "Adult Cast",
+        "Adventure",
+        "Historical",
+        "Iyashikei",
+        "Mystery",
+        "Seinen",
+        "Slice of Life",
+        "Supernatural"
+      ],
+      "num_episodes": 10,
+      "mean_score": 8.68,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/13/58533.jpg",
+      "score": 0.997,
+      "url": "https://myanimelist.net/anime/21939"
+    },
+    {
+      "anime_id": 35839,
+      "title": "Sora yori mo Tooi Basho",
+      "genres": [
+        "Adventure",
+        "CGDCT",
+        "Comedy",
+        "Drama"
+      ],
+      "num_episodes": 13,
+      "mean_score": 8.5,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/6/89879.jpg",
+      "score": 0.9963,
+      "url": "https://myanimelist.net/anime/35839"
+    },
+    {
+      "anime_id": 32366,
+      "title": "Gintama°: Aizome Kaori-hen",
+      "genres": [
+        "Comedy",
+        "Gag Humor",
+        "Parody",
+        "Shounen"
+      ],
+      "num_episodes": 2,
+      "mean_score": 8.37,
+      "media_type": "ova",
+      "picture": "https://cdn.myanimelist.net/images/anime/1962/133573.jpg",
+      "score": 0.9954,
+      "url": "https://myanimelist.net/anime/32366"
+    },
+    {
+      "anime_id": 61322,
+      "title": "Dr. Stone: Science Future Part 2",
+      "genres": [
+        "Adventure",
+        "Comedy",
+        "Shounen"
+      ],
+      "num_episodes": 12,
+      "mean_score": 8.5,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/1785/151710.jpg",
+      "score": 0.9954,
+      "url": "https://myanimelist.net/anime/61322"
+    },
+    {
+      "anime_id": 268,
+      "title": "Golden Boy",
+      "genres": [
+        "Adult Cast",
+        "Adventure",
+        "Comedy",
+        "Ecchi",
+        "Gag Humor",
+        "Seinen",
+        "Workplace"
+      ],
+      "num_episodes": 6,
+      "mean_score": 8.04,
+      "media_type": "ova",
+      "picture": "https://cdn.myanimelist.net/images/anime/3/62867.webp",
+      "score": 0.995,
+      "url": "https://myanimelist.net/anime/268"
+    },
+    {
+      "anime_id": 57864,
+      "title": "Monogatari Series: Off & Monster Season",
+      "genres": [
+        "Comedy",
+        "Mystery",
+        "Supernatural",
+        "Vampire"
+      ],
+      "num_episodes": 14,
+      "mean_score": 8.63,
+      "media_type": "ona",
+      "picture": "https://cdn.myanimelist.net/images/anime/1142/146776.jpg",
+      "score": 0.9948,
+      "url": "https://myanimelist.net/anime/57864"
+    },
+    {
+      "anime_id": 41025,
+      "title": "Fumetsu no Anata e",
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Shounen",
+        "Supernatural"
+      ],
+      "num_episodes": 20,
+      "mean_score": 8.35,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/1880/118484.webp",
+      "score": 0.9946,
+      "url": "https://myanimelist.net/anime/41025"
+    },
+    {
+      "anime_id": 6864,
+      "title": "xxxHOLiC Rou",
+      "genres": [
+        "Drama",
+        "Mystery",
+        "Seinen",
+        "Supernatural"
+      ],
+      "num_episodes": 2,
+      "mean_score": 8.18,
+      "media_type": "ova",
+      "picture": "https://cdn.myanimelist.net/images/anime/9/25080.jpg",
+      "score": 0.9944,
+      "url": "https://myanimelist.net/anime/6864"
+    },
+    {
+      "anime_id": 235,
+      "title": "Meitantei Conan",
+      "genres": [
+        "Adventure",
+        "Comedy",
+        "Detective",
+        "Mystery",
+        "Shounen"
+      ],
+      "num_episodes": null,
+      "mean_score": 8.18,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/7/75199.jpg",
+      "score": 0.9941,
+      "url": "https://myanimelist.net/anime/235"
+    },
+    {
+      "anime_id": 265,
+      "title": "Hajime no Ippo: Mashiba vs. Kimura",
+      "genres": [
+        "Combat Sports",
+        "Shounen",
+        "Sports"
+      ],
+      "num_episodes": 1,
+      "mean_score": 8.26,
+      "media_type": "ova",
+      "picture": "https://cdn.myanimelist.net/images/anime/4/64737.webp",
+      "score": 0.9941,
+      "url": "https://myanimelist.net/anime/265"
+    },
+    {
+      "anime_id": 20651,
+      "title": "Natsume Yuujinchou: Itsuka Yuki no Hi ni",
+      "genres": [
+        "Iyashikei",
+        "Mythology",
+        "Shoujo",
+        "Slice of Life",
+        "Supernatural"
+      ],
+      "num_episodes": 1,
+      "mean_score": 8.33,
+      "media_type": "ova",
+      "picture": "https://cdn.myanimelist.net/images/anime/11/79742.jpg",
+      "score": 0.994,
+      "url": "https://myanimelist.net/anime/20651"
+    },
+    {
+      "anime_id": 55772,
+      "title": "Golden Kamuy: Saishuushou",
+      "genres": [
+        "Action",
+        "Adult Cast",
+        "Adventure",
+        "Historical",
+        "Military",
+        "Seinen"
+      ],
+      "num_episodes": 13,
+      "mean_score": 8.4,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/1288/154763.jpg",
+      "score": 0.9937,
+      "url": "https://myanimelist.net/anime/55772"
+    },
+    {
+      "anime_id": 5341,
+      "title": "Ookami to Koushinryou II",
+      "genres": [
+        "Adult Cast",
+        "Adventure",
+        "Drama",
+        "Romance",
+        "Supernatural"
+      ],
+      "num_episodes": 12,
+      "mean_score": 8.3,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/6/59399.webp",
+      "score": 0.9934,
+      "url": "https://myanimelist.net/anime/5341"
+    },
+    {
+      "anime_id": 30709,
+      "title": "Kamisama Hajimemashita: Kako-hen",
+      "genres": [
+        "Comedy",
+        "Mythology",
+        "Romance",
+        "Shoujo",
+        "Supernatural",
+        "Time Travel"
+      ],
+      "num_episodes": 4,
+      "mean_score": 8.41,
+      "media_type": "ova",
+      "picture": "https://cdn.myanimelist.net/images/anime/3/81250.webp",
+      "score": 0.9933,
+      "url": "https://myanimelist.net/anime/30709"
+    },
+    {
+      "anime_id": 21755,
+      "title": "Shin Tennis no Oujisama vs. Genius 10",
+      "genres": [
+        "Shounen",
+        "Sports"
+      ],
+      "num_episodes": 10,
+      "mean_score": 7.59,
+      "media_type": "ova",
+      "picture": "https://cdn.myanimelist.net/images/anime/12/65403.webp",
+      "score": 0.9933,
+      "url": "https://myanimelist.net/anime/21755"
+    },
+    {
+      "anime_id": 11917,
+      "title": "Major: World Series",
+      "genres": [
+        "Shounen",
+        "Sports",
+        "Team Sports"
+      ],
+      "num_episodes": 2,
+      "mean_score": 8.29,
+      "media_type": "ova",
+      "picture": "https://cdn.myanimelist.net/images/anime/5/75220.jpg",
+      "score": 0.9923,
+      "url": "https://myanimelist.net/anime/11917"
+    },
+    {
+      "anime_id": 2966,
+      "title": "Ookami to Koushinryou",
+      "genres": [
+        "Adult Cast",
+        "Adventure",
+        "Drama",
+        "Romance",
+        "Supernatural"
+      ],
+      "num_episodes": 13,
+      "mean_score": 8.21,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/5/59401.jpg",
+      "score": 0.9922,
+      "url": "https://myanimelist.net/anime/2966"
+    },
+    {
+      "anime_id": 49709,
+      "title": "Fumetsu no Anata e Season 2",
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Shounen",
+        "Supernatural"
+      ],
+      "num_episodes": 20,
+      "mean_score": 8.11,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/1271/127700.jpg",
+      "score": 0.992,
+      "url": "https://myanimelist.net/anime/49709"
+    },
+    {
+      "anime_id": 9890,
+      "title": "Major: Message",
+      "genres": [
+        "Shounen",
+        "Sports",
+        "Team Sports"
+      ],
+      "num_episodes": 1,
+      "mean_score": 8.14,
+      "media_type": "ova",
+      "picture": "https://cdn.myanimelist.net/images/anime/11/75219.jpg",
+      "score": 0.9919,
+      "url": "https://myanimelist.net/anime/9890"
+    },
+    {
+      "anime_id": 31181,
+      "title": "Owarimonogatari",
+      "genres": [
+        "Comedy",
+        "Mystery",
+        "Supernatural",
+        "Vampire"
+      ],
+      "num_episodes": 12,
+      "mean_score": 8.45,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/8/76479.webp",
+      "score": 0.9919,
+      "url": "https://myanimelist.net/anime/31181"
+    },
+    {
+      "anime_id": 38450,
+      "title": "Mo Dao Zu Shi: Xian Yun Pian",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy",
+        "Historical",
+        "Mystery",
+        "Mythology",
+        "Reincarnation"
+      ],
+      "num_episodes": 8,
+      "mean_score": 8.45,
+      "media_type": "ona",
+      "picture": "https://cdn.myanimelist.net/images/anime/1404/106707.webp",
+      "score": 0.9917,
+      "url": "https://myanimelist.net/anime/38450"
+    },
+    {
+      "anime_id": 40852,
+      "title": "Dr. Stone: Stone Wars",
+      "genres": [
+        "Adventure",
+        "Comedy",
+        "Shounen"
+      ],
+      "num_episodes": 11,
+      "mean_score": 8.15,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/1711/110614.webp",
+      "score": 0.9913,
+      "url": "https://myanimelist.net/anime/40852"
+    },
+    {
+      "anime_id": 44042,
+      "title": "Holo no Graffiti",
+      "genres": [
+        "Comedy"
+      ],
+      "num_episodes": null,
+      "mean_score": 8.13,
+      "media_type": "ona",
+      "picture": "https://cdn.myanimelist.net/images/anime/1259/110227.jpg",
+      "score": 0.9913,
+      "url": "https://myanimelist.net/anime/44042"
+    },
+    {
+      "anime_id": 1412,
+      "title": "Lupin III",
+      "genres": [
+        "Action",
+        "Adult Cast",
+        "Adventure",
+        "Comedy",
+        "Mystery",
+        "Seinen"
+      ],
+      "num_episodes": 23,
+      "mean_score": 7.63,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/10/15625.webp",
+      "score": 0.991,
+      "url": "https://myanimelist.net/anime/1412"
+    },
+    {
+      "anime_id": 59978,
+      "title": "Sousou no Frieren 2nd Season",
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Fantasy",
+        "Shounen"
+      ],
+      "num_episodes": 10,
+      "mean_score": 8.84,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/1921/154528.webp",
+      "score": 0.9908,
+      "url": "https://myanimelist.net/anime/59978"
+    },
+    {
+      "anime_id": 19647,
+      "title": "Hajime no Ippo: Rising",
+      "genres": [
+        "Combat Sports",
+        "Shounen",
+        "Sports"
+      ],
+      "num_episodes": 25,
+      "mean_score": 8.61,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/6/56147.jpg",
+      "score": 0.9908,
+      "url": "https://myanimelist.net/anime/19647"
+    },
+    {
+      "anime_id": 59986,
+      "title": "Grand Blue Season 2",
+      "genres": [
+        "Adult Cast",
+        "Comedy",
+        "Gag Humor",
+        "Seinen"
+      ],
+      "num_episodes": 12,
+      "mean_score": 8.5,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/1108/150583.jpg",
+      "score": 0.9905,
+      "url": "https://myanimelist.net/anime/59986"
+    },
+    {
+      "anime_id": 457,
+      "title": "Mushishi",
+      "genres": [
+        "Adult Cast",
+        "Adventure",
+        "Historical",
+        "Iyashikei",
+        "Mystery",
+        "Seinen",
+        "Slice of Life",
+        "Supernatural"
+      ],
+      "num_episodes": 26,
+      "mean_score": 8.65,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/2/73862.jpg",
+      "score": 0.9905,
+      "url": "https://myanimelist.net/anime/457"
+    },
+    {
+      "anime_id": 62568,
+      "title": "Dr. Stone: Science Future Part 3",
+      "genres": [
+        "Adventure",
+        "Comedy",
+        "Shounen"
+      ],
+      "num_episodes": 13,
+      "mean_score": 8.25,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/1773/155779.jpg",
+      "score": 0.9904,
+      "url": "https://myanimelist.net/anime/62568"
+    },
+    {
+      "anime_id": 56784,
+      "title": "Bleach: Sennen Kessen-hen - Soukoku-tan",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Shounen",
+        "Supernatural"
+      ],
+      "num_episodes": 14,
+      "mean_score": 8.67,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/1595/144074.jpg",
+      "score": 0.9904,
+      "url": "https://myanimelist.net/anime/56784"
+    },
+    {
+      "anime_id": 18661,
+      "title": "Kamisama Hajimemashita OVA",
+      "genres": [
+        "Comedy",
+        "Mythology",
+        "Romance",
+        "Shoujo",
+        "Supernatural"
+      ],
+      "num_episodes": 2,
+      "mean_score": 8.09,
+      "media_type": "ova",
+      "picture": "https://cdn.myanimelist.net/images/anime/6/56425.jpg",
+      "score": 0.9903,
+      "url": "https://myanimelist.net/anime/18661"
+    },
+    {
+      "anime_id": 12431,
+      "title": "Uchuu Kyoudai",
+      "genres": [
+        "Adult Cast",
+        "Comedy",
+        "Seinen",
+        "Space",
+        "Workplace"
+      ],
+      "num_episodes": 99,
+      "mean_score": 8.48,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/1290/135694.webp",
+      "score": 0.9896,
+      "url": "https://myanimelist.net/anime/12431"
+    },
+    {
+      "anime_id": 57592,
+      "title": "Dr. Stone: Science Future",
+      "genres": [
+        "Adventure",
+        "Comedy",
+        "Shounen"
+      ],
+      "num_episodes": 12,
+      "mean_score": 8.26,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/1403/146479.jpg",
+      "score": 0.9896,
+      "url": "https://myanimelist.net/anime/57592"
+    },
+    {
+      "anime_id": 40434,
+      "title": "Mo Dao Zu Shi: Wanjie Pian",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy",
+        "Historical",
+        "Mystery",
+        "Mythology",
+        "Reincarnation"
+      ],
+      "num_episodes": 12,
+      "mean_score": 8.63,
+      "media_type": "ona",
+      "picture": "https://cdn.myanimelist.net/images/anime/1634/116782.jpg",
+      "score": 0.9895,
+      "url": "https://myanimelist.net/anime/40434"
+    },
+    {
+      "anime_id": 61335,
+      "title": "Medalist 2nd Season",
+      "genres": [
+        "Drama",
+        "Performing Arts",
+        "Seinen",
+        "Sports"
+      ],
+      "num_episodes": 9,
+      "mean_score": 8.43,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/1828/155038.webp",
+      "score": 0.9895,
+      "url": "https://myanimelist.net/anime/61335"
+    },
+    {
+      "anime_id": 37208,
+      "title": "Mo Dao Zu Shi",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy",
+        "Historical",
+        "Mystery",
+        "Mythology",
+        "Reincarnation"
+      ],
+      "num_episodes": 15,
+      "mean_score": 8.44,
+      "media_type": "ona",
+      "picture": "https://cdn.myanimelist.net/images/anime/1908/153734.jpg",
+      "score": 0.9891,
+      "url": "https://myanimelist.net/anime/37208"
+    },
+    {
+      "anime_id": 59228,
+      "title": "Kuroshitsuji: Midori no Majo-hen",
+      "genres": [
+        "Action",
+        "Historical",
+        "Mystery",
+        "Mythology",
+        "Shounen",
+        "Supernatural"
+      ],
+      "num_episodes": 13,
+      "mean_score": 8.17,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/1517/148292.jpg",
+      "score": 0.9887,
+      "url": "https://myanimelist.net/anime/59228"
+    },
+    {
+      "anime_id": 44070,
+      "title": "Tian Guan Cifu Special",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy",
+        "Historical",
+        "Mythology"
+      ],
+      "num_episodes": 1,
+      "mean_score": 8.46,
+      "media_type": "ona",
+      "picture": "https://cdn.myanimelist.net/images/anime/1043/110306.webp",
+      "score": 0.9886,
+      "url": "https://myanimelist.net/anime/44070"
+    },
+    {
+      "anime_id": 50399,
+      "title": "Tian Guan Cifu Er",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy",
+        "Historical",
+        "Mythology"
+      ],
+      "num_episodes": 12,
+      "mean_score": 8.63,
+      "media_type": "ona",
+      "picture": "https://cdn.myanimelist.net/images/anime/1203/139210.jpg",
+      "score": 0.9885,
+      "url": "https://myanimelist.net/anime/50399"
+    },
+    {
+      "anime_id": 55823,
+      "title": "Natsume Yuujinchou Shichi",
+      "genres": [
+        "Iyashikei",
+        "Mythology",
+        "Shoujo",
+        "Slice of Life",
+        "Supernatural"
+      ],
+      "num_episodes": 12,
+      "mean_score": 8.58,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/1270/145168.jpg",
+      "score": 0.9883,
+      "url": "https://myanimelist.net/anime/55823"
+    },
+    {
+      "anime_id": 44,
+      "title": "Rurouni Kenshin: Meiji Kenkaku Romantan - Tsuioku-hen",
+      "genres": [
+        "Action",
+        "Adult Cast",
+        "Drama",
+        "Historical",
+        "Romance",
+        "Samurai",
+        "Shounen"
+      ],
+      "num_episodes": 4,
+      "mean_score": 8.69,
+      "media_type": "ova",
+      "picture": "https://cdn.myanimelist.net/images/anime/1656/137618.jpg",
+      "score": 0.9883,
+      "url": "https://myanimelist.net/anime/44"
+    },
+    {
+      "anime_id": 5258,
+      "title": "Hajime no Ippo: New Challenger",
+      "genres": [
+        "Combat Sports",
+        "Shounen",
+        "Sports"
+      ],
+      "num_episodes": 26,
+      "mean_score": 8.67,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/8/56617.jpg",
+      "score": 0.9882,
+      "url": "https://myanimelist.net/anime/5258"
+    },
+    {
+      "anime_id": 11597,
+      "title": "Nisemonogatari",
+      "genres": [
+        "Comedy",
+        "Ecchi",
+        "Mystery",
+        "Supernatural"
+      ],
+      "num_episodes": 11,
+      "mean_score": 8.12,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/1044/103654.webp",
+      "score": 0.988,
+      "url": "https://myanimelist.net/anime/11597"
+    },
+    {
+      "anime_id": 9989,
+      "title": "Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai.",
+      "genres": [
+        "Drama",
+        "Supernatural"
+      ],
+      "num_episodes": 11,
+      "mean_score": 8.28,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/5/79697.webp",
+      "score": 0.9879,
+      "url": "https://myanimelist.net/anime/9989"
+    },
+    {
+      "anime_id": 205,
+      "title": "Samurai Champloo",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Historical",
+        "Samurai"
+      ],
+      "num_episodes": 26,
+      "mean_score": 8.52,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/1370/135212.jpg",
+      "score": 0.9878,
+      "url": "https://myanimelist.net/anime/205"
+    },
+    {
+      "anime_id": 37989,
+      "title": "Golden Kamuy 2nd Season",
+      "genres": [
+        "Action",
+        "Adult Cast",
+        "Adventure",
+        "Historical",
+        "Military",
+        "Seinen"
+      ],
+      "num_episodes": 12,
+      "mean_score": 8.24,
+      "media_type": "tv",
+      "picture": "https://cdn.myanimelist.net/images/anime/1180/95018.jpg",
+      "score": 0.9878,
+      "url": "https://myanimelist.net/anime/37989"
+    },
+    {
+      "anime_id": 995,
+      "title": "Tennis no Oujisama: Zenkoku Taikai-hen",
+      "genres": [
+        "Shounen",
+        "Sports"
+      ],
+      "num_episodes": 13,
+      "mean_score": 7.88,
+      "media_type": "ova",
+      "picture": "https://cdn.myanimelist.net/images/anime/12/10572.jpg",
+      "score": 0.9873,
+      "url": "https://myanimelist.net/anime/995"
+    },
+    {
+      "anime_id": 2752,
+      "title": "Tennis no Oujisama: Zenkoku Taikai-hen - Semifinal",
+      "genres": [
+        "Shounen",
+        "Sports"
+      ],
+      "num_episodes": 6,
+      "mean_score": 7.87,
+      "media_type": "ova",
+      "picture": "https://cdn.myanimelist.net/images/anime/1640/133533.jpg",
+      "score": 0.9873,
+      "url": "https://myanimelist.net/anime/2752"
+    }
+  ]
+}
