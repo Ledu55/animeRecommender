@@ -6,7 +6,9 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-ROOT = Path(__file__).resolve().parents[1]
+# Project folder holding .env, data/, models/ and site/. Defaults to the current directory
+# rather than the package location, which is site-packages after a regular `pip install .`
+ROOT = Path(os.getenv("ANIMEREC_HOME", Path.cwd())).resolve()
 
 load_dotenv(ROOT / ".env")
 
